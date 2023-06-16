@@ -79,6 +79,13 @@ jobs:
           cache: npm
           cache-dependency-path: ./package.json
           node-version: 18
+          
+      - uses: harmon758/postgresql-action@v1
+        with:
+          postgresql version: "12"
+          postgresql db: render
+          postgresql user: adrianfaz
+          postgresql password: postgres
       - name: 📥 Install deps
         run: npm install
         
