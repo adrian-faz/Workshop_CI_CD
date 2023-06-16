@@ -86,6 +86,7 @@ jobs:
           postgresql db: render
           postgresql user: adrianfaz
           postgresql password: postgres
+          
       - name: 📥 Install deps
         run: npm install
         
